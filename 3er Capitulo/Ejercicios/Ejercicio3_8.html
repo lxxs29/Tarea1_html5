@@ -1,0 +1,45 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion -->
+<!-- Ejercicio 3.8 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.8</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>3.8</strong></h1>
+        <p>
+            <strong>(<em>Creaci&oacute;n de un formulario <mark>autocomplete</mark> con un elemento <mark>datalist</mark></em>)</strong> 
+            Cree un elemento input <mark>autocomplete</mark> con un elemento <mark>datalist</mark> asociado que contenga los d&iacute;s de la semana.
+        </p>
+        <hr>
+
+        <h1>Formulario autocomplete</h1>
+
+        <form method="post" autocomplete="on">
+            <p>
+                <label>
+                    Día de la semana: 
+                    <input type="text" name="dias" id="dsemana" list="diassemana" placeholder="D&iacute;a de la semana">
+                    <datalist id="diassemana">
+                        <option value="Lunes"></option>
+                        <option value="Martes"></option>
+                        <option value="Miercoles"></option>
+                        <option value="Jueves"></option>
+                        <option value="Viernes"></option>
+                        <option value="S&aacute;bado"></option>
+                        <option value="Domingo"></option>
+                    </datalist>
+                </label>
+            </p>
+
+
+        </form>
+
+    </body>
+</html>

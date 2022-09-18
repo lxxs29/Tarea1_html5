@@ -1,0 +1,49 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion -->
+<!-- 2.4 Una imagen llamada deidel.png tiene 200px -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2.4</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>2.4</strong></h1>
+        <p>
+            Una Imagen llamada deitel.png tiene 200 píxelesde ancho y 150 píxeles de alto. 
+            <br>
+            Escriba una instrucción en HTML5 usando
+            los atributos width y height del elemento img para realizar cada una de las siguientes transformaciones:
+            <br>
+            <br>
+            a) Aumentar el tama&ntilde;o de la imagen en un 100 por ciento.
+            <br>
+            b) Aumentar el tama&ntilde;o de la imagen en un 50 por ciento.
+            <br>
+            c) Cambiar la relaci&oacute;n anchura-altura a 2:1 manteniendo el valor de width que se obtuvo en el inicio (a).
+        </p>
+        <hr>
+        <!-- Imagen original -->
+        <h2>Imagen orginal de 200x150 px</h2>
+        <img src="img/deitel.png">
+        
+        <hr>
+        <!-- A) -->
+        <h2>a) Aumentar el tama&ntilde;o de la imagen en un 100 por ciento.</h2>
+        <img src="img/deitel.png" width="100%" height="100%">
+
+        <!-- B) -->
+        <h2>b) Aumentar el tama&ntilde;o de la imagen en un 50 por ciento.</h2>
+        <img src="img/deitel.png" width="50%" height="100%">
+
+        <!-- C) -->
+        <h2> c) Cambiar la relaci&oacute;n anchura-altura a 2:1 manteniendo el valor de width que se obtuvo en el inicio (a).</h2>
+        <img src="img/deitel.png" style="aspect-ratio: 2/1; width: 100%; object-fit: cover;" >
+        <!-- object-fit: rellena el espacio de la imagen para evitar la deformacio de la misma-->
+        <!-- https://www.silocreativo.com/creando-relaciones-aspecto-css-aspect-ratio/ -->
+    </body>
+</html>

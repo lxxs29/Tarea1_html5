@@ -1,0 +1,169 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion  -->
+<!-- Ejercicio 3.5 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.5</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>3.5</strong></h1>
+        <p>
+            Escribe un docuemento (o elemento) HTML5 para realizar cada una de las siguientes tareas:
+        </p>
+        
+        <ol style="list-style: none;">
+            <!-- a) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">a)</strong>
+                    <!-- Enunciado -->
+                    Se pidi&oacute; a los estudiantes que clasificaran los alimentos en la cafeter&iacute;a, en una escala del 1 al 10. Use un elemento <mark>meter</mark> con texto a su izquierda y a su derecha para indicar que calificaci&oacute;n promedio fue 7 de 10.
+                </p>
+            </li>
+            <!-- b) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">b)</strong>
+                    <!-- Enunciado -->
+                    Cree un elemento <mark>details</mark> que muestre el texto <strong>"Resultado de la encuesta"</strong> en el elemento summary para la parte (a). Cuando el usuario haga clic en la flecha enseguida del texto de summary, deber&aacute; aparecerun p&aacute;rrafo que exlpique sobre la encuesta.
+                </p>
+            </li>
+            <!-- c) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">c)</strong>
+                    <!-- Enunciado -->
+                    Cree un elemento <mark>text</mark> para el primer nombre. El elemento deber&aacute; recibir el enfoque de manera autom&aacute;tica al momento de desplegar el formulario en un navegador.
+                </p>
+            </li>
+            <!-- d) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">d)</strong>
+                    <!-- Enunciado -->
+                    Modifique la parte (c) de modo que se elimine el elemento <mark>label</mark> y use texto en un elemento <mark>placeholder</mark> en el elemento <mark>input</mark>.
+                 </p>
+            </li>
+            <!-- e) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">e)</strong>
+                    <!-- Enunciado -->
+                    Use un elemento <mark>datalist</mark> para promoveer una lista <mark>autocomplete</mark> para cinco estados.
+                </p>
+            </li>
+            <!-- f) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">f)</strong>
+                    <!-- Enunciado -->
+                    Cree un elemento input <mark>range</mark> que permita al usuario selecionar un n&uacute;mero del 1 al 100.
+
+                </p>
+            </li>
+            <!-- g) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">g)</strong>
+                    <!-- Enunciado -->
+                    Especifique que no debe permitirse el atributo <mark>autocomplete</mark> en un formulario. Muestre s&oacute;lo la etiqueta de apertura del formulario.
+                </p>
+            </li>
+            <!-- h) -->
+            <li>
+                <p>
+                    <strong style="font-size: 18px;">h)</strong>
+                    Use un elemento <mark>mark</mark> para resaltar el segundo enunciado del siguiente p&aacute;rrafo:
+                    <br>
+                    < p >
+                        Se pidi&oacute; a los estudiantes que clasificaran los alimentos en la cafeter&iacute;a En una escala del 1 al 10. El resultado prometido fue .
+                    < p >
+                </p>
+            </li>
+        </ol>
+        <hr>
+        <!-- ============================================================ -->
+        <!-- Aquí comienza el formulario -->
+        <!-- a) -->
+        <div>
+            <h3>El promedio de la calificaci&oacute;n de los alimentos de la cafeteria es: </h3>
+            <!-- el elemento <meter> representa una escala dentro de un rango -->
+        
+            7 <meter min="1"
+                max="10"
+                value="7">
+            </meter> 10
+        </div>
+        <!-- b) -->
+        <!-- el elemento summary representa un resumen para el contenido del elemento details -->
+        <br>
+        <div>
+            <details>
+                <summary><strong>Resultado de la encuesta</strong></summary>
+
+                <ul>
+                    <li>
+                        "Se pidi&oacute; a los estudiantes que clasificaran los alimentos de la cafeter&iacute;a.
+                        El promedio fue 7 de 10."
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <br>
+        <!-- c) -->
+        <form action="post" autocomplete="on">
+            <p>
+                <label>
+                    Primer nombre:
+                    <input type="text" placeholder="Primer nombre">
+                </label>
+            </p>
+
+            <!-- d) - e) -->      
+            <p>
+                <label for="listaEstados">Estados
+                    <input type="text" id="listaEstados"
+                            placeholder="Nombre de un estado"
+                            list="estados"
+                    />
+                    <datalist id="estados">
+                        <option value="Veracruz"></option>
+                        <option value="CDMX"></option>
+                        <option value="Guadalajara"></option>
+                        <option value="EDOMEX"></option>
+                        <option value="Chihuahua"></option>
+                    </datalist>
+                </label>
+            </p>
+
+            <!-- f) -->
+            <p>
+                <label>
+                    1
+                    <input type="range" 
+                        min="1"
+                        max="100"
+                    >
+                    100
+                </label>
+            </p>
+
+            <!-- g) -->
+            <p>
+                < form > 
+            </p>
+        </form>
+
+        <div>
+            Se pidi&oacute; a los estudiantes que clasificaran los alimentos en la cafeter&iacute;a en una escala del 1 al 10. 
+            <mark>El resultado promedio fue.</mark>
+        </div>
+
+    </body>
+</html>

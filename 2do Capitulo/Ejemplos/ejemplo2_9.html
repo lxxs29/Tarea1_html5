@@ -1,0 +1,60 @@
+<!-- Miguel Conde Luis -->
+<!-- Figura 2.11 | Listas anidadas y listas desordenadas -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listas</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Las mejores caracteristicas de Internet</h1>
+        <!-- Crear una lista desordenada -->
+        <ul>
+            <li>
+                Puede conocer nuevas personas de países de todo el mundo.
+            </li>
+            <li>
+                Tiene acceso a los nuevos medios a medida que se hacen públicos.
+                <!-- esto empiza una lista desordenada anidada, que usa una -->
+                <!-- viñeta distinta. La lista termina al -->
+                <!-- cerrar la etiqueta <ul> -->
+                <ul>
+                    <li>Nuevos juegos</li>
+                    <li>Nuevas aplicaciones 
+                        <!-- lista ordenada anidada -->
+                        <ol>
+                            <li>Por negocios</li>
+                            <li>Por placer</li>
+                        </ol>
+                    </li> <!-- termina elemento li que inició en linea 24 y que 
+                                llama a nuevas aplicaciones -->
+                
+                    <li>Noticias las 24 horas</li>
+                    <li>Motores de busqueda</li>
+                    <li>Compras</li>
+                    <li>Programación
+
+                        <!-- otra lista anidada ordenada -->
+                        <ol>
+                            <li>XML</li>
+                            <li>Java</li>
+                            <li>HTML5</li>
+                            <li>JavaScript</li>
+                            <li>Nuevos lenguajes</li>
+                        </ol>
+                    </li>           
+                </ul> <!-- termina la lista anidada de la linea 22 -->
+            </li>
+
+            <li>Vínculos</li>
+            <li>Mantenerse en contacto con viejos amigos</li>
+            <li>Es tecnología del futuro</li>
+
+        </ul> <!-- termina la lista desordenada de la linea 14 --> 
+    </body>
+</html>

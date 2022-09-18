@@ -1,0 +1,127 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion -->
+<!-- 2.16  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2.16</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>2.15</strong></h1>
+
+        <p>
+            Una universidad local le pidi&oacute; que creara un documento de HTML5 que pertmita a los futuros univeriniversitarios <br>
+            proveer retroalimentaci&oacute;n sobre su vista al campus. Su documentos de HTML5 debe conetener un formularios <br>
+            con campos de texto para un nombre y un correo electr&oacute;nico. Proporcione casillas de verificaci&oacute;n que permitan a los <br>
+            futuros estudiantes indicar lo que les gust&oacute; m&aacute;s sobre el campus. Las casillas de verificaci&oacute;n deben incluir: campus, <br>
+            estudiantes, ubicaci&oacute;n, ambiente, dormitorios y deportes.
+            
+            Proporcione adem&aacute;s botones de opci&oacute;n que pregunten a los <br>
+            futuros estudiantes c&oacute;mo supieron sobre la universidad. Las operaciones deben incluir:
+            
+            amigo, televisi&oacute;n, Internet <br>
+            y otro. 
+            
+            Adem&aacute;s, Proporcine un &aacute;rea de texto para comentarios adicionales, un bot&oacute;n para restablecer. <br>
+            Use post para enviar la informaci&oacute;n en el fomualario a http://www.deitel.com .
+            <hr>
+        
+        </p>
+
+
+        <h1 style="font-family: 'Courier New', Courier, monospace;" >Universidad local </h1>
+
+        <h2>Llena todos los campos.</h2>
+        
+        <div>
+            
+            <form method="post" action="http://www.deitel.com">
+                <p>
+                    <label>Nombre: <input type="text" name="nombre"></label>
+                </p>
+                
+                <p>
+                    <label>Correo electr&oacute;nico: <input type="text" name="correo"></label>
+                </p>
+                
+                <!-- Opciones con checkbox - cosasgustaron -->
+                <p>Indique lo que m&aacute;s te gusta del campus</p>
+                <p>
+                    <label>
+                        Campus
+                        <input type="checkbox" name="cosasgustaron" value="campus">
+                    </label>
+                    <br>
+                    <label>
+                        Estudiantes 
+                        <input type="checkbox" name="cosasgustaron" value="estudiantes">
+                    </label>
+                    <br>
+                    <label>
+                        ubicaci&oacute;n
+                        <input type="checkbox" name="cosasgustaron" value="ubicacion">
+                    </label>
+                    <br>
+                    <label>
+                        Ambiente
+                        <input type="checkbox" name="cosasgustaron" value="ambiente">
+                    </label>
+                    <br>
+                    <label>
+                        Dormitorios
+                        <input type="checkbox" name="cosasgustaron" value="dormitorios">
+                    </label>
+                    <br>
+                    <label>
+                        Deportes
+                        <input type="checkbox" name="cosasgustaron" value="deportes">
+                    </label>
+                </p>
+                <!-- Opciones con radio -->
+                <p>
+                    ¿C&oacute;mo supiste de nuestra universidad?
+                    <br> <br>
+                    <label>
+                        Amigo
+                        <input type="radio" name="comosupiste" value="amigo">
+                    </label>
+                    <br>
+                    <label>
+                        Televisi&oacute;n
+                        <input type="radio" name="comosupiste" value="television">
+                    </label>
+                    <br>
+                    <label>
+                        Internet
+                        <input type="radio" name="comosupiste" value="interntet">
+                    </label>
+                    <br>
+                    <label>
+                        Otro
+                        <input type="radio" name="comosupiste" value="otro">
+                    </label>
+                </p>
+                <!-- Comentarios -->
+                <p>
+                    <label>
+                        Comentarios:
+                        <br>
+                        <textarea name="comentarios" cols="36" rows="5">Escribe un comentario...
+                        </textarea>
+                    </label>
+
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

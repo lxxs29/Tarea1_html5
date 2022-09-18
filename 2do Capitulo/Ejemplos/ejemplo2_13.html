@@ -1,0 +1,138 @@
+<!-- Miguel Conde Luis -->
+<!-- Figura 2.15 | Formulario que usa una variedad de componentes -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>M&aacute;s formularios</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Formulario de retroalimentaci&oacute;n</h1>
+        <p>Llena este formulario para ayudarnos a mejorar nuestro sitio.</p>
+        
+        <form method="post" action="http://deitel.com">
+
+            <input type="hidden" name="destinatario" value="deitel@deitel.com">
+            <input type="hidden" name="asunto" value="Formualrio de retroalimentaci&oacute;n">
+            <input type="hidden" name="redirigir" value="principal.html">
+            
+            <p>
+                <label>
+                    <input name="nombre" type="text" size="25">
+                </label>
+            </p>
+
+            <!-- <textarea> crea un cuadro de texto multilinea -->
+            <p>
+                <label>
+                    Comentarios: <br>
+                    <textarea name="comentarios" cols="16" rows="4">
+                        Escriba aqu&iacute; los comentarios.
+                    </textarea>
+                </label>
+            </p>
+
+            <!-- <input type "password"> inserta un cuadro de texto -->
+            <!-- que aparece enmascarado con caracteres de asteriscos -->
+            <p>
+                <label>
+                    Direcci&oacute;n de correo electr&oacute;nico:
+                    <input type="password" name="email" size="25">
+                </label>
+            </p>
+
+            <p>
+                <strong>Cosas que le gustaron: </strong> <br>
+
+                <label>
+                    Dise&ntilde;o del sitio
+                    <input type="checkbox" name="cosasgustaron" value="Diseño">
+                </label>
+                
+                <label>
+                    V&iacute;nculos
+                    <input type="checkbox" name="cosasgustaron" value="Vínculos">
+                </label>
+                <label>
+                    Facilidad de uso
+                    <input type="checkbox" name="cosasgustaron" value="Facilidad">
+                </label>
+                <label>
+                    Im&aacute;genes
+                    <input type="checkbox" name="cosasgustaron" value="Imágenes">
+                </label>
+                <label>
+                    C&oacute;digo fuente
+                    <input type="checkbox" name="cosasgustaron" value="Código">
+                </label>
+            </p>
+
+            <!-- <input type = "radio"> crea un botónn de  opcion. -->
+            <!-- La diferencia entre botones de opcion -->
+            <!-- y casillas de verificacion es que solo puede seleccinarse -->
+            <!-- un boton de opciones en un grupo -->
+
+
+            <p>
+                <strong>C&oacute;mo lleg&aacute; a nuestro sitio</strong>
+                <br>
+                <label>
+                    Motor de b&uacute;squeda
+                    <input type="radio" name="comositio" value="motorbusqueda" checked>
+                </label>
+                
+                <label>
+                    V&iacute;nculos desde otro sitio
+                    <input type="radio" name="comositio" value="vinculo">
+                </label>
+                
+                <label>
+                    Sitio Web Deitel.com
+                    <input type="radio" name="comositio" value="deitel.com">
+                </label>
+                
+                <label>
+                    Referencia en un libro
+                    <input type="radio" name="comositio" value="libro">
+                </label>
+                
+                <label>
+                    Otro
+                    <input type="radio" name="comositio" value="otro">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Califica nuestro sitio:
+
+                    <!-- la etiqueta <select> presenta una lista -->
+                    <!-- desplegale con opciones indicadas por las -->
+                    <!-- estiquetas <opciones> -->
+                    <select name="calificacion">
+                        <option selected>Sorprente</option>
+                        <option>10</option>
+                        <option>9</option>
+                        <option>8</option>
+                        <option>7</option>
+                        <option>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                        <option>Malo</option>
+                    </select>    
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion  -->
+<!-- Ejercicio 3.6 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.6</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>3.6</strong></h1>
+        <p>
+            <strong><em>(Formulario de registro Web con encuesta opcional).</em></strong> Cree un formulario de registro de un sitio Web para obtener el primer nombre, apellido y direcci&oacute;n de correo electr&oacute;nico de un usuario. Incluya adem&aacute;s una pregunta de encuesta opcional que pida el a&ntilde;o en el que se encuentra el usuario en la universidad (por ejemplo, primer a&ntilde;o). 
+        </p>
+        <hr>
+
+        <h1>Formulario de registro Web</h1>
+        <p>Ingresa los siguientes datos.</p>
+        <form method="post" autocomplete="on">
+            <!-- a) -->
+            <p>
+                <label>
+                    Primer nombre: 
+                    <input type="text" placeholder="Primer nombre">
+                </label>
+            </p>
+            <!-- b) -->
+            <p>
+                <label>
+                    Apellido: 
+                    <input type="text" placeholder="Apellido">
+                </label>    
+            </p>
+            <!-- c) -->
+            <p>
+                <label>
+                    Correo electr&oacute;nico:
+                    <input type="email" placeholder="correo@dominio.com">
+                </label>
+            </p>
+            <!-- d) -->
+            <p>
+                <p>(Opcional) </p>
+                <label for="listaSemestre"> ¿Qu&eacute; semestre de la universidad cursas? <br>
+                    <p>
+                        <input type="text" id="listaSemestre" placeholder="Primer semestre" list="noSemestre" />
+                        <datalist id="noSemestre">
+                            <option value="Primer semestre"></option>
+                            <option value="Segundo semestre"></option>
+                            <option value="Tercer semestre"></option>
+                            <option value="Cuarto semestre"></option>
+                            <option value="Quinto semestre"></option>
+                            <option value="Sexto semestre"></option>
+                            <option value="S&eacute;ptimo semestre"></option>
+                            <option value="Octavo semestre"></option>
+                            <option value="Noveno semestre"></option>
+                            <option value="D&eacute;cimo semestre"></option>
+                            <option value="Und&eacute;cimo semestre"></option>
+                            <option value="Duod&eacute;cimo semestre"></option>
+                        </datalist>
+                    </p>
+                </label>
+            </p>
+        </form>
+    </body>
+</html>

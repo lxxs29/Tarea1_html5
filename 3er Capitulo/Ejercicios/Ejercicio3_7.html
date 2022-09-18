@@ -1,0 +1,41 @@
+<!-- Miguel Conde Luis -->
+<!-- Ejercicios de autoevaluacion  -->
+<!-- Ejercicio 3.7 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3.7</title>
+    </head>
+    <body>
+        <!-- Botón para regresar al index -->
+        <a href="../../index.html"><label><input type="submit" name="regresar" id="menu" value="Regresar" style="font-size: 18px;"></label></a>
+        <!-- ------------------------------- -->
+        <h1>Ejercicio <strong>3.7</strong></h1>
+        <p>
+            <strong>(Creaci&oacute;n de un formulario con autocomplete).</strong> Cree un formulario de b&uacute;squeda. Use el navegador Web Firefox para probar el formulario. Escriba <mark>Junio</mark> y env&iacute;e el formulario. Despu&eacute;s escriba una <mark>J</mark> en el elemento <mark>input</mark> para ver las entradas anteriores que empizan con <mark>J</mark>: deber&aacute; aparecer <mark>Junio</mark> debajo del elemento <mark>input</mark>. Escriba <mark>Julio</mark> y env&iacute;e el formulario de nuevo. Ahora escriba una <mark>J</mark> en el elemento <mark>input</mark> para ver las entradas anteriores que empiezan con <mark>J:</mark> deber&aacute;n aparecer <mark>Junio</mark> y <mark>Julio</mark> debajo del elemento <mark>input</mark>. Prueb esto con sus propias consultas de b&uacute;squeda tambi&eacute;n.
+        </p>
+        <hr>
+        
+        <form method="post" autocomplete="on" action="Ejercicio3_7.html ">
+            <h1>B&uacute;squeda</h1>
+            <p>
+                <label>
+                    <p>
+                        <input type="text" placeholder="¿Qu&eacute; est&aacute;s b&uacute;scando?" id="meses" list="jmeses">
+                       <datalist id="jmeses">
+                            <option value="Junio"></option>
+                            <option value="Julio"></option>
+                       </datalist>
+                    </p>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="submit" value="Enviar" >
+                </label>
+            </p>
+        </form>
+    </body>
+</html>
